@@ -54,21 +54,25 @@ body{
     padding: 1rem;
 }
 
-
 /*
 Diseño web responsive, utilizando media queries
 */
-@media (min-width: 480px){
-    body{
-        background-color: blue;
-        font-size: .5rem;
-    }
-}
 
-@media (min-width: 768px){
-    body{
-        background-color: cornflowerblue;
-        font-size: 1rem;
-    }
+/*
+Se creó un snippet apra automatizar un poco la creación de una media querie
+1. Teclas cmd + shift + p
+2. escribir user snippets
+3. buscar css.json
+4. Se agregò el siguiente código para crear un snippet, atajo, para crear una media querie
+    "Crea un Media Querie": {
+		"prefix" : "mq",
+		"body" : "@media (min-width: $1) {\n    $2\n}"
+	}
+5. $1 posiciona el cursor en este espacio.
+6. $2 posiciona el cursos aqui al presionar la tecla tab
+7. escribir el prefijo "mq" para llamar al snippet en vscode
+*/
+@media (min-width: 480px) {
+    
 }
 
