@@ -22,6 +22,7 @@ html{
 body{
     /* 1rem = 10px */
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
 }
 
 /*Selector de clases
