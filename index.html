@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
@@ -17,16 +18,18 @@
         <h1 class="titulo">Joaquin Sayago <span>Freelancer</span></h1>
     </header>
 
-    <nav>
-        <!--href es un atributo de la etiqueta link-->
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="navegacion-background">
+        <nav class="navegacion-principal contenedor">
+            <!--href es un atributo de la etiqueta link-->
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav> 
+    </div>
     
     <section>
-        <h2>Diseño y desarrollo web Freelancer</h2>
+        <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
 
         <!--Scalable Vector Graphics-->
         <!--https://tablericons.com/-->
@@ -37,6 +40,7 @@
         </svg>
 
         <p>Xalapa Veracruz, México</p>
+
         <a href="#">Contactar</a>
     </section>
     

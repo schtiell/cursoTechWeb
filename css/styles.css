@@ -43,3 +43,34 @@ body{
 1. Es como el navegador va a mostrar el css deacuerdo a que tan especifico es el selector creado
 2. CSS es en cascada eso no significa que si un selector aparece despues será tomado en cuenta si no mas bien en base a su especificidad
 */
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-background{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--osculo);
+    padding: 1rem;
+
+}
+
