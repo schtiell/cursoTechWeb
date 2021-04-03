@@ -1,0 +1,20 @@
+/*Hack para adaptar el contenido del sitio a pantallas con gran cantidad de pixeles, utilizando rem en lugar 
+de px pixeles*/
+html{
+    font-size: 62.5%;
+}
+
+body{
+
+    /* 1rem = 10px */
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+span{
+    font-size: 2rem;
+}
