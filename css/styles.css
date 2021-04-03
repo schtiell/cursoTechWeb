@@ -1,20 +1,44 @@
+/*
+Custom properties
+o Variables de CSS 
+:root, es un pseudoelemento que no existe como tal dentro del archivo html
+*/
+:root{
+    --blanco:#ffffff;
+    --osculo:#212121;
+    --primario:#FFC107;
+    --secundario:#0097a7;
+    --gris:#757575; 
+}
+
 /*Hack para adaptar el contenido del sitio a pantallas con gran cantidad de pixeles, utilizando rem en lugar 
 de px pixeles*/
 html{
+    /*key: value*/
     font-size: 62.5%;
 }
 
+/*Selector de etiquetas*/
 body{
-
     /* 1rem = 10px */
     font-size: 16px;
 }
 
-h1{
+/*Selector de clases
+1. No pueden iniciar el nombre con un numero
+2. El nombre de la clase debe describir a la perfección el elemento afectado
+*/
+.titulo{
     text-align: center;
     font-size: 3.8rem;
 }
 
-span{
+.titulo span{
     font-size: 2rem;
 }
+
+/*ESPECIFICIDAD CSS*/
+/* 
+1. Es como el navegador va a mostrar el css deacuerdo a que tan especifico es el selector creado
+2. CSS es en cascada eso no significa que si un selector aparece despues será tomado en cuenta si no mas bien en base a su especificidad
+*/
