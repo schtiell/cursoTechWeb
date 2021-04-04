@@ -42,6 +42,13 @@ body{
     
 }
 
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 .navegacion-principal a{
     color: var(--blanco);
     text-decoration: none;
@@ -57,10 +64,9 @@ body{
     padding: 1rem;
 }
 
-@media (min-width: 768px) {
-    .navegacion-principal{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat; /*Para que la imagen no se repita cuando se haga mas amplia la resolución*/
+    background-size: cover;
 }
 
