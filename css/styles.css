@@ -8,6 +8,12 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box; /* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+}
+
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body{
@@ -68,5 +74,18 @@ body{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat; /*Para que la imagen no se repita cuando se haga mas amplia la resolución*/
     background-size: cover;
+    height: 450px;
+    /* El contenedor padre debe tener posición relativa para que el contenedor hijo pueda tener posición absoluta*/
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgb(0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
+}
+.contenido-hero{
+    color: var(--blanco);
 }
 
