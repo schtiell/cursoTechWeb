@@ -42,6 +42,26 @@ h1, h2, h3 {
     font-size: 2rem;
 }
 
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%; /*Este tomará este valor al tener menos de 768px de ancho*/
+    text-align: center;
+}
+/*Media querie para hacer auto ajustable el tamaño del boton cuando la pantalla tiene al menos ancho de 768px*/
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+}
+
 .contenedor{
     /* Asigna 120 rem como maximo de ancho en caso de no tener el espacio en pantalla toma el 100% del pantalla disponible, para ajustarse al diseño web responsive*/
     max-width: 120rem; 
