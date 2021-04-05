@@ -5,13 +5,12 @@
     --secundario:#0097a7;
     --gris:#757575; 
 }
-
+/* Generales */
 html{
     font-size: 62.5%;
-    box-sizing: border-box; /* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+    box-sizing: border-box; 
 }
 
-/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -22,6 +21,27 @@ body{
     font-family: 'Krub', sans-serif;
 }
 
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%; 
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+}
+
+/* Tipografias */
 h1{
     font-size: 3.8rem; 
 }
@@ -42,26 +62,7 @@ h1, h2, h3 {
     font-size: 2rem;
 }
 
-.boton{
-    background-color: var(--secundario);
-    color: var(--blanco);
-    padding: 1rem 3rem;
-    margin-top: 1rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: .5rem;
-    width: 90%; /*Este tomará este valor al tener menos de 768px de ancho*/
-    text-align: center;
-}
-/*Media querie para hacer auto ajustable el tamaño del boton cuando la pantalla tiene al menos ancho de 768px*/
-@media (min-width: 768px) {
-    .boton{
-        width: auto;
-    }
-}
-
+/* Navegación principal */
 .contenedor{
     /* Asigna 120 rem como maximo de ancho en caso de no tener el espacio en pantalla toma el 100% del pantalla disponible, para ajustarse al diseño web responsive*/
     max-width: 120rem; 
@@ -101,9 +102,10 @@ h1, h2, h3 {
     padding: 1rem;
 }
 
+/* Hero */
 .hero{
     background-image: url(../img/hero.jpg);
-    background-repeat: no-repeat; /*Para que la imagen no se repita cuando se haga mas amplia la resolución*/
+    background-repeat: no-repeat; 
     background-size: cover;
     height: 450px;
     /* El contenedor padre debe tener posición relativa para que el contenedor hijo pueda tener posición absoluta*/
@@ -128,7 +130,7 @@ h1, h2, h3 {
     color: var(--blanco);
 }
 
-.ubicacion{
+.contenido-hero .ubicacion{
     display: flex;
     align-items:flex-end;
 }
