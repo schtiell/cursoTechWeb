@@ -47,6 +47,17 @@ body{
     }
 }
 
+.sombra{ 
+    /*  Generador de codigo para funciones gradient y shadow entre otras
+        cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 /* Tipografias */
 h1{
     font-size: 3.8rem; 
@@ -116,6 +127,7 @@ h1, h2, h3 {
     height: 450px;
     /* El contenedor padre debe tener posición relativa para que el contenedor hijo pueda tener posición absoluta*/
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero{
