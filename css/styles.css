@@ -4,6 +4,7 @@
     --primario:#FFC107;
     --secundario:#0097a7;
     --gris:#757575; 
+    --grisClaro: #DFE9F3;
 }
 /* Generales */
 html{
@@ -19,13 +20,18 @@ body{
     /* 1rem = 10px */
     font-size: 16px;
     font-family: 'Krub', sans-serif;
+    /*Para aplicar un degradado de fondo en el body, La función linear-gradient() establece un degradado lineal como imagen de fondo.
+    - de abajo a arriba: to top
+    - el color y desde donde empieza
+    - el color y hasta donde llega*/
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% )
 }
 
 .boton{
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
