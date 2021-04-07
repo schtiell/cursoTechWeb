@@ -153,3 +153,8 @@ h1, h2, h3 {
     align-items:flex-end;
 }
 
+/* Servicios */
+.servicios{
+    /* display grid, agrega las propiedades de grid */
+    display: grid;
+}
