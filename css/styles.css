@@ -154,6 +154,8 @@ h1, h2, h3 {
 }
 
 /* Servicios */
+/*CSS GRID*/
+/* Firefox Developer Edition permite trabajar mejor con CSS GRID en comparacion de Chrome */
 @media (min-width: 780px) {
     .servicios{
         /* display grid, agrega las propiedades de grid */
@@ -165,6 +167,7 @@ h1, h2, h3 {
         /* grid-template-rows permite definir filas */
         /* grid: repeat(2, 1fr) / repeat(3, 2fr) indica 2 filas y 3 columnas */
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem; /*Esta propiedad agrega 10px o 1 rem de separacion entre columnas*/
     }
 }
 
