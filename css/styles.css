@@ -154,7 +154,17 @@ h1, h2, h3 {
 }
 
 /* Servicios */
-.servicios{
-    /* display grid, agrega las propiedades de grid */
-    display: grid;
+@media (min-width: 780px) {
+    .servicios{
+        /* display grid, agrega las propiedades de grid */
+        display: grid;
+        /* grid-template-columns permite definir columnas  */
+        /* grid-template-columns: 33.3% 33.3% 33.3%; o bien: */
+        /* grid-template-columns: 1fr 1fr 1fr;  fr indica fracciones lo que es lo mismo que la propiedad anterior*/
+
+        /* grid-template-rows permite definir filas */
+        /* grid: repeat(2, 1fr) / repeat(3, 2fr) indica 2 filas y 3 columnas */
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+
