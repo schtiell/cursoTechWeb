@@ -197,3 +197,26 @@ h1, h2, h3 {
     line-height: 2; /*Interlineado del texto*/
 }
 
+/* Contacto */
+.formulario{
+    background-color: var(--gris);
+    width: min(780px,100%); /* Asigna un ancho dependiendo de la resolucion de la pantalla*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold; /*bold o 700px es lo mismo*/
+    color: var(--primario);
+    text-transform: uppercase;
+    text-align: center;
+}
