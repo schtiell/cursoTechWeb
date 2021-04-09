@@ -171,3 +171,29 @@ h1, h2, h3 {
     }
 }
 
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%; /*Permite definir un circulo*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal; /*normal o 400px es lo mismo*/
+}
+
+.servicio p{
+    text-align: justify;
+    line-height: 2; /*Interlineado del texto*/
+}
+
